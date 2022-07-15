@@ -30,8 +30,10 @@ export default {
 <style scoped lang="scss">
   header{
 
+    
     .img-container{
-    height: 80px;
+      padding: 0.5rem 0;
+    height: 100px;
       img {
         height: 100%;
         }
