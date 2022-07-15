@@ -3,6 +3,7 @@
     <div class="d-flex justify-content-between container">
       <div id="footer-left-container">
 
+
       </div>
 
 
@@ -31,9 +32,17 @@ export default {
     div#footer-right-container{
       height: 15rem;
       overflow: hidden;
+      text-align: center;
+              position: relative;
+
       img{
+        height: 400px;
         object-fit: cover;
         vertical-align: middle;
+        position: relative;
+        top:50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
       }
     }
         }
