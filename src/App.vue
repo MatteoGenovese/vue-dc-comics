@@ -2,7 +2,7 @@
   <section id="app">
     <Header />
     <Main />
-    <OtherProducts />
+    <Products />
     <Footer />
   </section>
 </template>
@@ -12,7 +12,8 @@
 import Header from './components/Header.vue';
 import Main from './components/Main.vue';
 import Footer from './components/Footer.vue';
-import OtherProducts from './components/OtherProducts.vue';
+import Products from './components/Products.vue';
+
 
 
 export default {
@@ -21,7 +22,7 @@ export default {
     Header,
     Main,
     Footer,
-    OtherProducts,
+    Products,
 }
 }
 </script>
