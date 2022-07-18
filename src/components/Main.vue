@@ -9,10 +9,8 @@
     <div class="main-content">
       <div class="container">
         <div id="cards">
-
           <Cards v-for="(card, index) in cardsInfo" :key="index" :thumbPassed="card.thumb" :pricePassed="card.price"
             :seriesPassed="card.series" :typePassed="card.type" />
-
         </div>
         
       </div>
