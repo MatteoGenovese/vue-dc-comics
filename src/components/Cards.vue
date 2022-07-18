@@ -46,6 +46,7 @@ export default {
         width: 160px;
         height: 160px;
         overflow: hidden;
+        cursor: pointer;
       }
     }
 </style>
