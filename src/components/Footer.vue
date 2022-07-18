@@ -147,13 +147,11 @@ export default {
       }
 
       a{
-        
         padding: 1rem;
         background-color: #303030;
         border: 4px solid #008DFF;
         color: white;
         text-decoration: none;
-        
       }
       span, img{
         color: #008DFF;
