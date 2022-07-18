@@ -111,6 +111,7 @@ export default {
     }
 
     div#footer-left-container{
+      padding: 20px;
       height: 100%;
       font-size: 0.7rem;
       color: white;

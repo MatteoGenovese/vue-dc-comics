@@ -1,18 +1,27 @@
 <template>
   <main>
+    <div class="jumbo-box">
+      <img src="../assets/images/jumbotron.jpg" alt=""></img>
+    </div>
+    <div class="container">
+      <div class="current">CURRENT SERIES</div>
+    </div>
     <div class="main-content">
       <div class="container">
         <div id="cards">
-          
-          <Cards v-for="(card, index) in cardsInfo" :key="index" 
-            :thumbPassed="card.thumb" 
-            :pricePassed="card.price"
-            :seriesPassed="card.series" 
-            :typePassed="card.type" />
+
+          <Cards v-for="(card, index) in cardsInfo" :key="index" :thumbPassed="card.thumb" :pricePassed="card.price"
+            :seriesPassed="card.series" :typePassed="card.type" />
 
         </div>
+        
       </div>
+      <a class="blue-button">
+        load more
+      </a>
+      
     </div>
+
   </main>
 </template>
 
@@ -110,16 +119,58 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 main {
-  .main-content {
-    background-color: #000;
-    color: #fff;
+
+  .jumbo-box {
+    height: 17rem;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      object-fit: contain;
+      vertical-align: middle;
+      position: relative;
+      width: 100%;
+    }
   }
-  #cards{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
+  .current {
+    position: absolute;
+    z-index: 2;
+    padding: 1rem;
+    background-color: #008DFF;
+    color: white;
+    top: calc(100px + 17rem);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-weight: bold;
+  }
+
+  .blue-button {
+    cursor: pointer;
+    padding: 1rem;
+    width: 150px;
+    background-color: #008DFF;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-content {
+    background-color: #1C1C1C;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
   }
 }
-
 </style>
