@@ -68,14 +68,15 @@ export default {
     div.product{
       display: flex;
       align-items: center;
+      cursor: pointer;
     }
     h4{
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
   }
   img {
     height: 50px;
-    width: 50px;
+    padding: 5px;
   }
 
 }
