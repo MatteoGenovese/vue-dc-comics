@@ -1,11 +1,13 @@
 <template>
 
-    <div class="pz_card">
+  <div class="pz_card">
+    <div class="img-container">
       <img :src="thumbPassed" alt="Default">
-      <p>{{ pricePassed }}</p>
-      <p>{{ seriesPassed }}</p>
-      <p>{{ typePassed }}</p>
     </div>
+    <!-- <div>{{ pricePassed }}</div> -->
+    <div>{{ seriesPassed }}</div>
+    <!-- <div>{{ typePassed }}</div> -->
+  </div>
 
 </template>
 
@@ -13,8 +15,8 @@
 
 export default {
   name: 'Cards',
-  props : {
-    thumbPassed : String,
+  props: {
+    thumbPassed: String,
     pricePassed : String,
     seriesPassed : String,
     typePassed : String,
@@ -27,17 +29,21 @@ export default {
 <style scoped lang="scss">
 
 
-  .pz_card{
-    width: 160px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    div.pz_card img{
-      width: 100px;
-      height: 100px;
+    div.pz_card {
+      width: calc( 100% / 6 );
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      object-fit: cover;
+
+      div{
+        margin-top: 15px;
+      }
+      .img-container {
+        width: 160px;
+        height: 160px;
+        overflow: hidden;
+      }
     }
-  }
-
-
 </style>
