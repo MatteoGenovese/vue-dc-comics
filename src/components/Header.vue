@@ -84,13 +84,18 @@ export default {
         align-items: center;
         text-decoration: none;
         list-style: none;
+        text-transform: uppercase;
 
         font-size: .8rem;
         padding: 0.5rem;
         height: 100%;
 
+        &:hover{
+          cursor: pointer;
+          background-color: #3880F1;
+          color: white;
+        }
         &.active{
-          
           color: #3880F1;
           border-bottom: 3px solid #3880F1;
         }

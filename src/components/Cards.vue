@@ -39,6 +39,8 @@ export default {
 
       div{
         margin-top: 15px;
+        text-transform: uppercase;
+        text-align: center;
       }
       .img-container {
         width: 160px;

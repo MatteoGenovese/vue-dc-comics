@@ -153,6 +153,8 @@ main {
     font-weight: bold;
     display: flex;
     justify-content: center;
+    text-transform: uppercase;
+    text-decoration: none;
   }
 
   .main-content {

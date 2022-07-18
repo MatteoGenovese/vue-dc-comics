@@ -72,6 +72,7 @@ export default {
     }
     h4{
       font-size: 0.8rem;
+      text-transform: uppercase;
     }
   }
   img {
