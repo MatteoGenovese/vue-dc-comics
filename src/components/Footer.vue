@@ -158,6 +158,9 @@ export default {
         color: #008DFF;
         margin-right: 1rem;
       }
+      img{
+        cursor: pointer;
+      }
 
       .footer-right-container,
       .footer-left-container{
