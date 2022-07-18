@@ -1,5 +1,4 @@
 <template>
-
   <div class="product-container">
     <div class="wrapper container" >
       <div class="product" v-for="(product,index) in products" :key="index">
@@ -9,13 +8,12 @@
         <h4>{{ product.title }}</h4>
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
 export default {
-  name: 'OtherProducts',
+  name: 'Products',
   data: function() {
     return {
       products: [
