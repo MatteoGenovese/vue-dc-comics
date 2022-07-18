@@ -5,16 +5,11 @@
     </div>
     <div >
       <ul class="d-flex align-items-center">
-        <li class="d-flex align-items-center">Characters</li>
-        <li class="active d-flex align-items-center">COMICS</li>
-        <li>MOVIES</li>
-        <li>TV</li>
-        <li>GAMES</li>
-        <li>COLLECTIBLES</li>
-        <li>VIDEOS</li>
-        <li>FANS</li>
-        <li>NEWS</li>
-        <li>SHOP</li>
+        <li v-for="(page, index) in menuPages" 
+        :key="index"
+        :class="{active: page.isActive == true} ">
+        {{page.title}}
+        </li> 
       </ul>
     </div>
   </header>
@@ -23,6 +18,49 @@
 <script>
 export default {
   name: 'Header',
+  data: function() {
+    return {
+      menuPages: [
+        {
+          title: "Characters",
+          isActive: false
+        },
+        {
+          title: "COMICS",
+          isActive: true
+        },
+        {
+          title: "MOVIES",
+          isActive: false
+        },
+        {
+          title: "TV",
+          isActive: false
+        },
+        {
+          title: "GAMES",
+          isActive: false
+        },
+        {
+          title: "COLLECTIBLES",
+          isActive: false
+        },
+        {
+          title: "VIDEOS",
+          isActive: false
+        },
+        {
+          title: "FANS",
+          isActive: false
+        },
+        {
+          title: "NEWS",
+          isActive: false
+        },
+        {
+          title: "SHOP",
+          isActive: false
+        }, ]}},
 }
 </script>
 
