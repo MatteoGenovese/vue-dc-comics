@@ -1,16 +1,15 @@
 <template>
 
-  <div id="cards">
+    <div class="pz_card">
+      <img :src="thumbPassed" alt="Default">
+      <p>{{ pricePassed }}</p>
+      <p>{{ seriesPassed }}</p>
+      <p>{{ typePassed }}</p>
+    </div>
 
-    <img src="thumbPassed" alt="Default">
-    <p>pricePassed</p>
-    
-
-  </div>
 </template>
 
 <script>
-import { stringify } from 'querystring';
 
 export default {
   name: 'Cards',
@@ -27,36 +26,18 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
-.product-container {
-  height: 150px;
-  background-color: #3880F1;
-  color: #fff;
 
-  .container{
+  .pz_card{
+    width: 160px;
+    overflow: hidden;
     display: flex;
-
-  }
-  .wrapper{
-    height: 100%;
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-
-    div.product{
-      margin-right: 2rem;
-    }
-    div.product{
-      display: flex;
-      align-items: center;
-    }
-    h4{
-      font-size: 1rem;
+    div.pz_card img{
+      width: 100px;
+      height: 100px;
     }
   }
-  img {
-    height: 50px;
-    width: 50px;
-  }
 
-}
+
 </style>

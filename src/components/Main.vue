@@ -2,12 +2,15 @@
   <main>
     <div class="main-content">
       <div class="container">
-        <Cards v-for="(card,index) in cardsInfo"
-        :key="index"
-        :thumbPassed="card.thumb"
-        :pricePassed="card.price"
-        :seriesPassed="card.series"
-        :typePassed="card.type"/>
+        <div id="cards">
+          
+          <Cards v-for="(card, index) in cardsInfo" :key="index" 
+            :thumbPassed="card.thumb" 
+            :pricePassed="card.price"
+            :seriesPassed="card.series" 
+            :typePassed="card.type" />
+
+        </div>
       </div>
     </div>
   </main>
@@ -96,8 +99,8 @@ export default {
           "price": "$16.99",
           "series": "Catwoman",
           "type": "graphic novel"
-        }
-      ]
+        },
+      ],
     }
   }
 }
@@ -108,9 +111,14 @@ export default {
 <style scoped lang="scss">
 main {
   .main-content {
-    height: 150px;
     background-color: #000;
     color: #fff;
   }
+  #cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
 }
+
 </style>
