@@ -1,12 +1,12 @@
 <template>
 
   <div class="product-container">
-    <div class="wrapper" >
+    <div class="wrapper container" >
       <div class="product" v-for="(product,index) in products" :key="index">
         <div class="image-container">
           <img :src="require(`../assets/images/${product.url}`)" :alt="product.title">
         </div>
-        <h3>{{ product.title }}</h3>
+        <h4>{{ product.title }}</h4>
       </div>
     </div>
 
@@ -59,9 +59,20 @@ export default {
 
   }
   .wrapper{
+    height: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+
     div.product{
       margin-right: 2rem;
+    }
+    div.product{
+      display: flex;
+      align-items: center;
+    }
+    h4{
+      font-size: 1rem;
     }
   }
   img {
